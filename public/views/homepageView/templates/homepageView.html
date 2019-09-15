@@ -1,0 +1,45 @@
+<style>
+.homepage-file-container.i-ui-container {
+    display: block;
+    background: #ffecf0;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    line-height: 1.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid pink;
+}
+
+.file-icons {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    padding: 0.5rem;
+}
+.i-ui-div.file-contents {
+    width: calc(100% - 4rem);
+    margin: auto;
+    padding: 1rem;
+    border: 1px solid #808080;
+    border-radius: 1rem;
+    background: white;
+    overflow: auto;
+    white-space: pre-wrap;
+    margin-top: 2rem;
+}
+
+.i-ui-div.file-name {
+    padding: 0.5rem 2rem;
+}
+.open-file-icon{
+	cursor: pointer;
+}
+</style>
+<exhibit overflow="auto" padding="1rem">
+	<listView id="file-container" datamart="homeview-mart" display="block" listclass="homepage-file-container">
+		<division class="file-name" title="::fullpath::">::name::</division>
+		<div class="file-icons"><i class="open-file-icon fa fa-eye" aria-hidden="true"></i></div>
+		<division class="file-contents"	escapehtml='true' isattached="::!!contents::">::contents::</division>
+	</listview>
+	
+</exhibit>

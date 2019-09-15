@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+	<link rel="stylesheet" href="http://cdn.jsdelivr.net/gh/ishaananuraag/IUIjs/versions/v1.0.2/css/IUI.css"/>
+	<link rel="stylesheet" href="http://cdn.jsdelivr.net/gh/ishaananuraag/IUIjs/versions/v1.0.2/font/css/font.css"/>
+	<link rel="stylesheet" href="http://cdn.jsdelivr.net/gh/ishaananuraag/IUIjs/versions/v1.0.2/css/themes/IUI-base.theme.css"/>
+  </head>
+  <body>
+  
+	<exhibit>
+		<header height="3rem" background="#080808">
+			<div class="heading-title">Reverb<span class="title-o">o</span>dir</div>
+		</header>
+		<exhibit>
+			<header height="2rem" class="toolbar-header">
+			</header>
+			<exhibit>
+				<sidebar width="15rem" class="directory-sidebar">
+					<viewport name="sidebar-viewport" defaultView="sidebar-view"></viewport>
+				</sidebar>
+				<exhibit>
+					<viewport name="homepage-viewport" defaultView="homepage-view"></viewport>
+				</exhibit>
+			</exhibit>
+		</exhibit>
+	</exhibit>
+	
+	
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script src="/javascripts/vendors/IUI.js"></script>
+	<script src="/javascripts/vendors/require.js" data-main="/javascripts/main.js"></script>
+  </body>
+</html>
